@@ -3,9 +3,10 @@ import { Link } from 'react-router-dom';
 import { Stack } from '@mui/material';
 import Logo from "../assets/images/Logo.png";
 
+
 const Navbar = () => {
     return (
-        <div>
+        <div style={{ top: 0, backgroundColor: "#ff010017", zIndex: 2 }}>
             <Stack direction="row" justify content="space-around" sx={{ gap: { sm: "122px", xs: '40px', mt: { sm: "32px", xs: "20px" } }, justifyContent: 'none' }} px="20px">
                 <Link to="/">
                     <img src={Logo} alt="Logo" style={{ width: "48px", height: "48px", margin: '0 20px' }} />
@@ -16,7 +17,7 @@ const Navbar = () => {
                     <Link to="#exercises" style={{ textDecoration: 'none', color: "#3A1212" }}>Exercises</Link>
                 </Stack>
             </Stack>
-        </div>
+        </div >
 
     )
 }
