@@ -55,19 +55,19 @@ body {
 
 .hero-banner-img {
   position: absolute;
-  right: 40px;
+  right: 0px;
+  z-index: -1000;
   top: 0px;
   width: 700px;
   height: 900px;
-  margin-top: -330px;
-
+  margin-top: -270px;
 }
 
 .exercise-card {
   width: 300px;
-  height: 345px;
+  max-height: 345px;
   background: #fff;
-  border-top: 4px solid #FF2625;
+  /* border-top: 4px solid #FF2625; */
   border-bottom-left-radius: 20px;
   text-decoration: none;
   display: flex;
@@ -87,9 +87,15 @@ body {
   transition: 0.3s all ease-in-out;
 }
 
+.classForCardHoverOnly {
+  margin: 2rem;
+}
+
+.classForCardHoverOnly:hover,
 .exercise-card:hover,
 .bodyPart-card:hover {
   transform: scale(1.1, 1.1);
+  z-index: 100000;
 }
 
 .search-btn:hover {
@@ -104,6 +110,23 @@ body {
   width: 387px;
   height: 381px;
   text-decoration: none;
+}
+
+
+@media screen and (max-width:400) {
+  .exercise-card {
+    width: 280px;
+  }
+
+  .hero-banner-img {
+    display: none;
+  }
+}
+
+@media screen and (min-width:1080) {
+  .hero-banner-img {
+    display: none;
+  }
 }
 
 @media screen and (max-width:1200px) {
@@ -122,9 +145,9 @@ body {
     position: static !important;
   }
 
-  .hero-banner-img {
+  /* .hero-banner-img {
     display: none;
-  }
+  } */
 
   .exercise-card {
     width: 320px;
@@ -134,18 +157,12 @@ body {
     width: 320px;
     height: 300px;
   }
-
-}
-
-@media screen and (max-width:400px) {
-  .exercise-card {
-    width: 280px;
-  }
 }
 
 .spinner {
   display: flex;
   justify-content: center;
+  width: 100%;
 }
 
 .spinner::after {

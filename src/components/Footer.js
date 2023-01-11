@@ -4,7 +4,7 @@ import Logo from "../assets/images/Logo.png"
 
 const Footer = () => {
   return (
-    <Box mt="80px" bgcolor="#FFF3F4">
+    <Box mt="3rem" bgcolor="#FFF3F4">
       <Stack gap="40px" sx={{ alignItems: 'center' }} flexWrap="wrap" px="40px" pt="24px">
         <img src={Logo} alt="logo" style={{ width: 'auto', height: 'auto' }} />
       </Stack>

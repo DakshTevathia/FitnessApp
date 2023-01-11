@@ -6,11 +6,11 @@ import HorizontalBodyPartsScrollBar from "../components/HorizontalBodyPartsScrol
 const SimilarExercises = ({ targetMuscle, equipmentUsed }) => {
     console.log(targetMuscle, "... ", equipmentUsed);
     return (
-        <Box sx={{ mt: { lg: '3', xs: '0px' } }}>
+        <Box sx={{ mt: { lg: '3rem', xs: '0px' } }}>
             <Typography sx={{ fontSize: { lg: '44px', xs: '25px' }, ml: '20px' }} fontWeight={700} color="#000" mb="33px">
                 Similar <span style={{ color: '#FF2625', textTransform: 'capitalize' }}>Target Muscle</span> exercises
             </Typography>
-            <Stack direction="row" sx={{ p: 2, position: 'relative' }}>
+            <Stack direction="row" sx={{ p: 2, position: 'relative' }} >
                 {targetMuscle.length !== 0 ? <HorizontalBodyPartsScrollBar data={targetMuscle} /> : <Spinner />}
             </Stack>
             <Typography sx={{ fontSize: { lg: '44px', xs: '25px' }, ml: '20px', mt: { lg: '100px', xs: '60px' } }} fontWeight={700} color="#000" mb="33px">
