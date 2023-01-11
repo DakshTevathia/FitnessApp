@@ -113,7 +113,7 @@ body {
 }
 
 
-@media screen and (max-width:400) {
+@media screen and (max-width:800px) {
   .exercise-card {
     width: 280px;
   }
@@ -123,10 +123,17 @@ body {
   }
 }
 
-@media screen and (min-width:1080) {
+@media screen and (min-width:800px) and (max-width:1200px) {
   .hero-banner-img {
-    display: none;
+    osition: absolute;
+    right: 0px;
+    z-index: -1000;
+    top: 0px;
+    width: 500px;
+    height: auto;
+    margin-top: -130px;
   }
+
 }
 
 @media screen and (max-width:1200px) {
