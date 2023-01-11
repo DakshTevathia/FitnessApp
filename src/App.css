@@ -125,7 +125,7 @@ body {
 
 @media screen and (min-width:800px) and (max-width:1200px) {
   .hero-banner-img {
-    osition: absolute;
+    position: absolute;
     right: 0px;
     z-index: -1000;
     top: 0px;
