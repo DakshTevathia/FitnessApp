@@ -16,7 +16,7 @@ const BodyPart = (props) => {
             }}
             onClick={() => {
                 props.setBodyPart(props.singleDataElement)
-                window.scrollTo({ top: 1800, left: 100, behavior: 'smooth' })
+                window.scrollTo({ top: 1700, left: 100, behavior: 'smooth' })
             }}>
             <img src={Icon} alt="dumbell" style={{ width: "42px", height: "42px" }} />
             <Typography fontSize="24px" fontWeight="bold" color="#3A1212" textTransform="capitalize">{props.singleDataElement}</Typography>
